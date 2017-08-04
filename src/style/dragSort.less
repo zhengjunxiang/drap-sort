@@ -1,0 +1,131 @@
+@import './reset.css';
+@font-color: #333333;
+
+@font-sz:24;
+@font-sz-md:27;
+@font-sz-lg:34;
+
+@border-color: #d3d3d3;
+
+@bg-color: #f1f1f1;
+
+@base: 40rem;
+
+@base-color: #333333;
+@danger-color: #e13c3d;
+.font-set(@font-size, @font-clr) {
+  font-size: @font-size/@base;
+  color: @font-clr;
+}
+
+.title-base {
+  margin: 0;
+  .font-set(@font-sz-md, @font-color);
+}
+
+.title-base-bg {
+  background: @bg-color;
+  padding: 18/@base 20/@base;
+}
+
+.btn {
+  font-size: 22/@base;
+  color: @base-color;
+  padding: 12/@base 24/@base;
+  border-radius: 44/@base;
+  height: 44/@base;
+  background: #ffffff;
+  border: 1/@base solid @base-color;
+  line-height: 0;
+}
+.btn-danger {
+  color: @danger-color;
+  border: 1/@base solid @danger-color;
+}
+.btn-block {
+  font-size: 22/@base;
+  color: #ffffff;
+  padding: 12/@base 24/@base;
+  border-radius: 44/@base;
+  height: 44/@base;
+  background: @base-color;
+  border: 0;
+  line-height: 0;
+}
+.btn-block-danger {
+  background: @danger-color;
+  color: 1/@base solid @danger-color;
+  border: 1/@base solid @danger-color;
+}
+.coin-btn {
+  height: 58/@base;
+  width: 142/@base;
+  text-align: center;
+  line-height: 58/@base;
+  font-size: 23/@base;
+  display: inline-block;
+  color: @font-color;
+  border-radius: 58/@base;
+  border: 1/@base solid @border-color;
+  background: @bg-color;
+  position: absolute;
+}
+.shake-animation {
+  animation: shake .2s linear infinite;
+  -webkit-animation: shake .2s linear infinite;
+  -moz-animation: shake .2s linear infinite;
+}
+
+@keyframes shake {
+  0% {transform: rotateZ(2deg);}
+  50% {transform: rotateZ(-2deg);}
+  100% {transform: rotateZ(0deg);}
+}
+.coin-btn-del {
+  width: 36/@base;
+  height: 36/@base;
+  line-height: 34/@base;
+  text-align: center;
+  font-size: @font-sz-md/@base;
+  color: #ffffff;
+  background: rgba(200, 200, 200, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  font-style:normal;
+}
+
+.switch-coin-contanter {
+  display: block;
+  .header {
+    overflow: hidden;
+    .header-left {
+      float: left;
+      margin: 30/@base 0 0 20/@base;
+    }
+  }
+  .content {
+    display: block;
+    padding: 55/@base 30/@base 0;
+    #switchCoinExitCoinContent {
+      position: relative;
+      transition: all .2s ease;
+    }
+  }
+}
+
+.add-coin-contanter {
+  .content {
+    display: block;
+    padding: 55/@base 30/@base 0;
+    #addCoinContent {
+      height: 164/@base;
+      position: relative;
+    }
+  }
+}
+
+.hide{
+	display:none;
+}
