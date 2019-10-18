@@ -12,6 +12,8 @@ yarn run dev
 ```
 
 预览效果：
+> 使用浏览器的 device toolbar 或手机浏览器浏览
+
 ![预览效果](https://user-gold-cdn.xitu.io/2019/10/18/16dddef56c7329e5?w=500&h=799&f=gif&s=786599)
 
 ### 使用样例说明
