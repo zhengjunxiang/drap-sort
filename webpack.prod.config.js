@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const ExtractLess = new ExtractTextPlugin({
   allChunks: true,
-  filename: "dist/style/dragSort.css",
+  filename: "dist/style/DragSort.css",
   disable: process.env.NODE_ENV === "development"
 })
 
@@ -13,7 +13,7 @@ const config = {
     main: Path.resolve(__dirname, 'src/main.js')
   },
   output: {
-    filename: 'dist/js/dragSort.js'
+    filename: 'dist/js/DragSort.js'
   },
   stats: {
     errors: true, errorDetails: true, warnings: false, chunks: false
