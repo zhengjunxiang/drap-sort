@@ -14,7 +14,7 @@ yarn run dev
 预览效果：
 > 使用浏览器的 device toolbar 或手机浏览器浏览
 
-![预览效果]((https://github.com/zhengjunxiang/drap-sort/imgs/dome.gif)
+![预览效果](https://github.com/zhengjunxiang/drap-sort/imgs/dome.gif)
 
 ### 使用样例说明
 项目中的 [main.js](https://github.com/zhengjunxiang/drap-sort/blob/master/src/main.js) 使用样例：
